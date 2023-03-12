@@ -1,4 +1,10 @@
-# banana
+# Banana
+
+## About
+
+#### Vue 3 + ThreeJs implementation of a Banana
+
+- You can check the result in this [link](https://williamsebastiaoteixeira.github.io/banana/)
 
 ## Project setup
 ```

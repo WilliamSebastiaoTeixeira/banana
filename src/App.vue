@@ -1,17 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <BananaCanvas/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+  import { onMounted } from 'vue'
+  import BananaCanvas from './components/BananaCanvas.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  onMounted(() => document.title = 'Banana')
 </script>
 
 <style>
@@ -19,8 +14,8 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width: 100vw;
+  height: 100vh;
 }
 </style>
